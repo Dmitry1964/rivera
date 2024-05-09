@@ -1,7 +1,7 @@
 .header {
   padding-top: 10px;
   padding-bottom: 5px;
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 
@@ -53,4 +53,7 @@
   height: 60px;
   justify-self: flex-end;
   margin-top: 31px;
+  background-color: $color-default-white;
+  color: $color-nero;
+  border: none;
 }
