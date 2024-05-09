@@ -1,13 +1,56 @@
 .header {
-  padding: 28px 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: fixed;
+  width: 100%;
+}
 
-  background-color: $color-neon-blue;
+.header__content {
+  display: grid;
+  grid-template-columns: 46.5% 85px auto 22.1%;
+}
 
-  .container {
-    display: flex;
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 46px 0 0;
+  list-style: none;
+}
+
+.header__nav-item {
+  padding-bottom: 12px;
+
+  &:nth-child(2) {
+    padding-right: 18px;
+    border-bottom: 1px solid $color-default-white;
   }
+}
 
-  &__logo {
+.header__nav-link {
+  line-height: 20px;
+  color: $color-default-white;
+}
+
+.header__phone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-top: 46px;
+
+  & a {
+    display: block;
     color: $color-default-white;
   }
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 60px;
+  justify-self: flex-end;
+  margin-top: 31px;
 }
