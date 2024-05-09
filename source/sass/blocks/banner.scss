@@ -1,7 +1,8 @@
 .banner {
-  width: 1920px;
+  width: 1860px;
   margin: 0 auto;
   display: grid;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
 .banner__image {
