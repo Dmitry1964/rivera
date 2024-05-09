@@ -1,4 +1,33 @@
 mixin features()
   section.features
     .container
-      .features__wrapper
+      h2.features__title Все для вашего комфорта
+      ul.features__list
+        li.features__item
+          .features__item-content
+            .features__item-icon
+              +imgsvg('svg', 'icon-hygiene', 'svg', 56, 56, 'иконка' )
+            .features__item-img
+              +picture('content', 'hygiene', 'png', 421, 145, 'фотография санузла')
+          p Имеется санузел с душевой кабиной и всеми санитарно-гигиеническими средствами (шампунь, гель, мыло, фен, полотенца)
+        li.features__item
+          .features__item-content
+            .features__item-icon
+              +imgsvg('svg', 'icon-room', 'svg', 56, 56, 'иконка' )
+            .features__item-img
+              +picture('content', 'rooms', 'png', 425, 167, 'фотография санузла')
+          p Две комнаты с двухспальными кроватями и организованной системой, для хранения личных вещей (постельные принадлежности, предоставляем по количеству спальных мест)
+        li.features__item
+          .features__item-content
+            .features__item-icon
+              +imgsvg('svg', 'icon-livin-room', 'svg', 56, 56, 'иконка' )
+            .features__item-img
+              +picture('content', 'livin-room', 'png', 423, 164, 'фотография санузла')
+          p Уютная гостиная, совмещена с кухней и высокими окнами, из которых открывается вид на Котовское водохранилище.  Здесь гости могут собраться за обеденным столом или расслабиться на удобном диване. Есть телевизор;
+        li.features__item
+          .features__item-content
+            .features__item-icon
+              +imgsvg('svg', 'icon-kitchen', 'svg', 56, 56, 'иконка' )
+            .features__item-img
+              +picture('content', 'kitchen', 'png', 422, 170, 'фотография санузла')
+          p Полноценная кухня с холодильником, индукционной варочной плитой на две конфорки, микроволновкой. Есть набор посуды для приготовления еды, столовая посуда, бокалы, электрический чайник.
