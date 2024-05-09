@@ -18,10 +18,12 @@
 }
 
 .rouble {
+  /* stylelint-disable */
+  font-weight: 400 !important;
+  /* stylelint-enable */
   font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 
@@ -64,4 +66,8 @@
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
 }
