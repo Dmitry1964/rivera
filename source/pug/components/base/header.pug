@@ -23,20 +23,22 @@ mixin header(headerMods, currentUrl)
       },
     ]
 
-  header.header(class=headerMods)
+  header(class=headerMods)
     .container
-      .header__content
-        nav.header__nav
-          ul.header__nav-list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.header__nav-item
-                if(activeState)
-                  span.header__nav-link.is-active= link.text
-                else
-                  a.header__nav-link(href=link.href)= link.text
-        .header__logo
-          +picture('content', 'logo-header', 'png', 85, 125, 'логотип ривьера' )
-        .header__phone
-          a(href="89156662990") 8-915-666-29-90
-        button.header__button Забронировать
+      if(headerMods === "main-header")
+        .main-header__content
+          .main-header__phone
+            a(href="89156662990") 8-915-666-29-90
+          +navigation(currentUrl)
+          button.main-header__button(tabindex=0) Забронировать
+      else
+        .header__content
+          if(headerMods === "main-header")
+            +navigation(currentUrl)
+          else
+            +navigation(currentUrl)
+          .header__logo
+            +picture('content', 'logo-header', 'png', 85, 125, 'логотип ривьера' )
+          .header__phone
+            a(href="89156662990") 8-915-666-29-90
+          button.header__button Забронировать

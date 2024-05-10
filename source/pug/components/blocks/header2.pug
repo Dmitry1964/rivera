@@ -1,0 +1,42 @@
+mixin header2(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Дома"
+      },
+      {
+        href: "#",
+        text: "Баня"
+      },
+      {
+        href: "#",
+        text: "Отзывы"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      .header__content
+        nav.header__nav
+          ul.header__nav-list
+            each link in headerLinks
+              - const activeState = currentUrl === link.href
+              li.header__nav-item
+                if(activeState)
+                  span.header__nav-link.is-active= link.text
+                else
+                  a.header__nav-link(href=link.href)= link.text
+        .header__logo
+          +picture('content', 'logo-header', 'png', 85, 125, 'логотип ривьера' )
+        .header__phone
+          a(href="89156662990") 8-915-666-29-90
+        button.header__button Забронировать

@@ -1,0 +1,24 @@
+.main-header {
+  padding-top: 37px;
+  padding-bottom: 18px;
+}
+
+.main-header__content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+
+.main-header__button {
+  color: $color-nero;
+  background-color: $color-default-white;
+  padding: 20px 33px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-header__phone a {
+  color: $color-default-white;
+  text-decoration: underline;
+}

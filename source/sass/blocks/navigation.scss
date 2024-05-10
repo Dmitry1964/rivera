@@ -1,0 +1,43 @@
+.navigation {
+  justify-self: center;
+  align-self: center;
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 30px;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.navigation__item:nth-child(2) {
+  padding-right: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-image: url("../../img/content/arrow.png");
+    top: 9px;
+    right: -2px;
+  }
+}
+
+
+.navigation__link {
+  color: $color-default-white;
+  opacity: 0.6;
+
+  &.is-active {
+    opacity: 1;
+    border-bottom: 1px solid $color-default-white;
+    padding-bottom: 15px;
+  }
+}

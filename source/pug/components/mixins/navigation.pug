@@ -1,0 +1,33 @@
+mixin navigation(currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Дома"
+      },
+      {
+        href: "#",
+        text: "Баня"
+      },
+      {
+        href: "#",
+        text: "Отзывы"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+    ]
+  nav.navigation
+    ul.navigation__list
+      each link in headerLinks
+        - const activeState = currentUrl === link.href
+        li.navigation__item
+          if(activeState)
+            span.navigation__link.is-active= link.text
+          else
+            a.navigation__link(href=link.href)= link.text
