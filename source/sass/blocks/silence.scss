@@ -1,0 +1,41 @@
+.silence {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.silence__wrapper {
+  display: grid;
+  grid-template-columns: 44.7% 53%;
+  column-gap: 2.3%;
+  width: 1320px;
+  margin: 0 auto;
+  transform: translateX(20px);
+}
+
+.silence__content {
+  padding-top: 18px;
+}
+
+.silence__content h2 {
+  font-size: 36px;
+  line-height: auto;
+  color: $color-nero;
+  margin: 0 0 45px;
+}
+
+.silence__content p {
+  line-height: 20px;
+  color: $color-nero;
+  margin: 0 0 20px;
+}
+
+.silence__button {
+  color: $color-default-white;
+  padding: 20px 33px 22px;
+  border: none;
+  background-color: $color-zest;
+  margin-top: 31px;
+  cursor: pointer;
+}
