@@ -1,1 +1,33 @@
 mixin catalog()
+  section.catalog
+    .container
+      h2 Мы предлагаем
+      ul.catalog__list
+        li.catalog__item
+          .catalog__item-decor
+            .catalog__item-animation
+              +img('content', 'logo-mask', 'png', 78, 152, 'лого')
+              span 1
+          .catalog__item-img(data-image="first")
+            +picture('content', 'cottage1', 'jpg', 521, 390, 'коттедж 6 спальных мест')
+        li.catalog__item
+          .catalog__item-decor
+            .catalog__item-animation
+              +img('content', 'logo-mask', 'png', 78, 152, 'лого')
+              span 2
+          .catalog__item-img(data-image="second")
+            +picture('content', 'cottage2', 'jpg', 524, 390, 'коттедж 6 спальных мест')
+        li.catalog__item
+          .catalog__item-decor
+            .catalog__item-animation
+              +img('content', 'logo-mask', 'png', 78, 152, 'лого')
+              span 3
+          .catalog__item-img(data-image="third")
+            +picture('content', 'cottage3', 'jpg', 521, 390, 'коттедж 6 спальных мест')
+        li.catalog__item
+          .catalog__item-decor
+            .catalog__item-animation
+              +img('content', 'logo-mask', 'png', 78, 152, 'лого')
+              span 4
+          .catalog__item-img(data-image="fourth")
+            +picture('content', 'cottage4', 'jpg', 521, 390, 'коттедж 6 спальных мест')
