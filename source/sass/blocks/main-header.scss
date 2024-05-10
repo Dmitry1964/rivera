@@ -1,6 +1,9 @@
 .main-header {
   padding-top: 37px;
   padding-bottom: 18px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
 }
 
 .main-header__content {

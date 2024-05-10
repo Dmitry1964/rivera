@@ -12,14 +12,6 @@
   grid-row-end: 2;
 }
 
-.banner__livery {
-  width: 100%;
-  height: 160px;
-  transform-origin: top left;
-  transform: rotate(-3.7deg);
-  background-color: $color-default-white;
-}
-
 .banner__content {
   grid-column-start: 1;
   grid-column-end: 2;

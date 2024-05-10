@@ -1,0 +1,13 @@
+mixin main-banner()
+  section.main-banner
+    .main-banner__image
+      +picture('content', 'main-banner', 'jpg', 1920, 960, 'баннер турбаза ревьера')
+    .main-banner__content
+      .container
+        .main-banner__logo
+          +picture('content', 'main-logo', 'png', 807, 630, 'логотип турбаза ревьера')
+    .main-banner__back
+      .main-banner__back-left
+          +picture('content', 'bg-left', 'png', 467, 278, 'елочка березовая')
+      .main-banner__back-right
+          +picture('content', 'bg-right', 'png', 580, 340, 'логотип турбаза ревьера')
